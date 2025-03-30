@@ -1,3 +1,7 @@
+
+.body {
+  height:100vh;
+}
 #textblock {
   background-color: #210002;
   height: 100vh;
@@ -7,6 +11,7 @@
   width: 50%;
   margin: 0 auto;
   padding-top: 70px;
+  height: auto;
 }
 
 #textblock-title {
@@ -63,6 +68,32 @@
 	position: fixed;
 }
 
+.trailsText {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: black;
+  font-size: 6em;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+
+.trailsText > div {
+  padding-right: 0.05em;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+
 #artback {
   background-image: url(./images/background.png);
 }
@@ -97,4 +128,18 @@
 
 #manonmountain {
   background-image: url(./images/man_on_mountain.png);
+}
+
+#contentImg {
+  background-image: url(./images/content-img.jpg);
+}
+
+#you1 {
+  background-image: url(./images/you-1.png);
+  width: 150px;
+  height: 150px;
+}
+
+#day {
+  background-image: url(./images/day.gif);
 }

@@ -1,42 +1,47 @@
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import TextBlock from './textBlock';
+import { Parallax } from '@react-spring/parallax'
+import Night from './Night';
 import './App.css';
+import { useEffect } from 'react';
+import { FirstContent } from './firstContent';
+import { Content } from './content';
+import { Day } from './Day';
+import { Noon } from './Noon';
 
 function App() {
+
+  useEffect(() => {
+    // Play a YouTube video automatically when the page loads
+    const videoId = 'HrST1G01xXI'; // Replace with the YouTube video ID
+    const iframe = document.getElementById('youtube-player');
+    
+    if (iframe) {
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`; // Autoplay video and mute by default
+    }
+  }, []); 
+
+
   return (
     <div className="App">
-      <Parallax pages={2} style={{ top: '0', left: '0' }} class="animation">
-        <ParallaxLayer offset={0} speed={0.25}>
-          <div class="animation_layer parallax" id="artback"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.3}>
-          <div class="animation_layer parallax" id="mountain"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.1}>
-          <div class="animation_layer parallax" id="logoland"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.3}>
-          <div class="animation_layer parallax" id="jungle1"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.35}>
-          <div class="animation_layer parallax" id="jungle2"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <div class="animation_layer parallax" id="jungle3"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.45}>
-          <div class="animation_layer parallax" id="jungle4"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.40}>
-          <div class="animation_layer parallax" id="manonmountain"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.35}>
-          <div class="animation_layer parallax" id="jungle5"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.25}>
-          <TextBlock />
-        </ParallaxLayer>
+      <Parallax pages={4.35} style={{ top: '0', left: '0' }} className="animation">
+        <FirstContent/>
+        <Content/>
+        <Day/>
+        <Noon/>   
+        <Night/>
       </Parallax>
+
+
+      <div className="youtube-player-container" style={{display:'none'}}>
+        <iframe
+          id="youtube-player"
+          title='song'
+          width="560"
+          height="315"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   );
 }
