@@ -1,6 +1,6 @@
 # Parallax Animation in React
-
-This project is created as part of below YouTube video.
+For anniversary 6 year  
+Based on part of below YouTube video.
 
 <p align="center"> 
     <a href="https://youtu.be/jeSPvDI-IJw" target="_blank">
