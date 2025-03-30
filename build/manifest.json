@@ -1,6 +1,6 @@
 {
-  "short_name": "Anv 6 for you",
-  "name": "Anniversary 6th",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
