@@ -29,9 +29,7 @@ export const Noon = () => {
             controls={true}
             />
             </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={3.35} speed={0.25}>
+            
             <p style={{color:'white',padding:24}}>
             This is the latest video I shot when we met. At that time, we were watching Tee-Yod 2, and we were both very happy. I hope to continue being this happy.
             </p>
