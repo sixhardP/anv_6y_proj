@@ -22,7 +22,6 @@ function Night() {
                 {/* <p id="textblock-content">อยู่ด้วยกันไปนานๆ</p> */}
                 <img src={you} width={150} height={250} alt='you-1'  />
                 <div style={{position:'absolute',left:'10px'}}>
-                <Wordle letters={['A','N','V','','6','Y']} />
                 </div>
             
                 </div>
@@ -31,8 +30,7 @@ function Night() {
                 </div>
                 </div>
             <footer id='textblock-footer'>
-                Credit Image🧡 By&nbsp;
-                <a id="textblock-devsense" href="https://youtube.com/c/DevSense19">DevSense</a>
+                 <Wordle letters={['A','N','V','','6','Y']} />
             </footer>
         </div>
         </ParallaxLayer>

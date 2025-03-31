@@ -7,13 +7,12 @@ const AppContainer = styled('div', {
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
+  alignItems: 'flex-end',
 })
 
 const Container = styled('div', {
   display: 'flex',
   gap: 10,
-  marginBottom: 80,
 })
 
 const Box = styled('div', {
