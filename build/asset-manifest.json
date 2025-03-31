@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/anv_6y_proj/static/css/main.60115279.css",
-    "main.js": "/anv_6y_proj/static/js/main.1672e130.js",
+    "main.js": "/anv_6y_proj/static/js/main.361e6343.js",
     "reactPlayerYouTube.js": "/anv_6y_proj/static/js/reactPlayerYouTube.f64a0a22.chunk.js",
     "reactPlayerSoundCloud.js": "/anv_6y_proj/static/js/reactPlayerSoundCloud.5a3fb37a.chunk.js",
     "reactPlayerVimeo.js": "/anv_6y_proj/static/js/reactPlayerVimeo.9eaba0fe.chunk.js",
@@ -18,6 +18,7 @@
     "reactPlayerPreview.js": "/anv_6y_proj/static/js/reactPlayerPreview.dcf5bea9.chunk.js",
     "static/js/787.fcea0ce9.chunk.js": "/anv_6y_proj/static/js/787.fcea0ce9.chunk.js",
     "static/media/day.gif": "/anv_6y_proj/static/media/day.52faad41ae6af74ee416.gif",
+    "static/media/background-music.mp3": "/anv_6y_proj/static/media/background-music.1cd886e5fa2aa94d10f9.mp3",
     "static/media/latest-video.mp4": "/anv_6y_proj/static/media/latest-video.269aac046440cae9db42.mp4",
     "static/media/starfall-gif-46.gif": "/anv_6y_proj/static/media/starfall-gif-46.481482dcf623ea920c53.gif",
     "static/media/moon.gif": "/anv_6y_proj/static/media/moon.c5bf4feda349ce67cad3.gif",
@@ -37,7 +38,7 @@
     "static/media/cloud.gif": "/anv_6y_proj/static/media/cloud.ae5f48ae657dc716a7c9.gif",
     "index.html": "/anv_6y_proj/index.html",
     "main.60115279.css.map": "/anv_6y_proj/static/css/main.60115279.css.map",
-    "main.1672e130.js.map": "/anv_6y_proj/static/js/main.1672e130.js.map",
+    "main.361e6343.js.map": "/anv_6y_proj/static/js/main.361e6343.js.map",
     "reactPlayerYouTube.f64a0a22.chunk.js.map": "/anv_6y_proj/static/js/reactPlayerYouTube.f64a0a22.chunk.js.map",
     "reactPlayerSoundCloud.5a3fb37a.chunk.js.map": "/anv_6y_proj/static/js/reactPlayerSoundCloud.5a3fb37a.chunk.js.map",
     "reactPlayerVimeo.9eaba0fe.chunk.js.map": "/anv_6y_proj/static/js/reactPlayerVimeo.9eaba0fe.chunk.js.map",
@@ -56,6 +57,6 @@
   },
   "entrypoints": [
     "static/css/main.60115279.css",
-    "static/js/main.1672e130.js"
+    "static/js/main.361e6343.js"
   ]
 }
