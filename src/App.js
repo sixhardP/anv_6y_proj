@@ -1,46 +1,49 @@
-import { Parallax } from '@react-spring/parallax'
+import { Parallax } from '@react-spring/parallax';
 import Night from './Night';
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { FirstContent } from './firstContent';
 import { Content } from './content';
 import { Day } from './Day';
 import { Noon } from './Noon';
+import ReactAudioPlayer from "react-audio-player";
+import backgroundMusic from '././mp3/background-music.mp3';
 
 function App() {
 
-  useEffect(() => {
-    // Play a YouTube video automatically when the page loads
-    const videoId = 'HrST1G01xXI'; // Replace with the YouTube video ID
-    const iframe = document.getElementById('youtube-player');
-    
-    if (iframe) {
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`; // Autoplay video and mute by default
-    }
-  }, []); 
+  const [isMuted, setIsMuted] = useState(true); // Start with muted to allow autoplay
+  const [isPlay, setIsPlay] = useState(false)
 
+  useEffect(() => {
+    // After the component is mounted, unmute audio after a small delay (or after interaction)
+    const timer = setTimeout(() => {
+      setIsMuted(false); // Unmute audio after loading
+    }, 2000); // Wait 2 seconds or adjust timing based on preference
+
+    return () => clearTimeout(timer); // Clean up timeout on component unmount
+  }, []);
 
   return (
     <div className="App">
       <Parallax pages={4.35} style={{ top: '0', left: '0' }} className="animation">
-        <FirstContent/>
-        <Content/>
-        <Day/>
-        <Noon/>   
-        <Night/>
+        <FirstContent />
+        <Content />
+        <Day />
+        <Noon />
+        <Night />
       </Parallax>
 
-
-      <div className="youtube-player-container" style={{display:'none'}}>
-        <iframe
-          id="youtube-player"
-          title='song'
-          width="560"
-          height="315"
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
+      {/* Player */}
+      <div className="youtube-player-container">
+        {/* Play audio immediately with muted */}
+        <ReactAudioPlayer
+          src={backgroundMusic}
+          loop
+          muted={isMuted} // Initially muted to bypass autoplay restrictions
+          controls
+          onPlay={() => setIsPlay(true)}
+          style={{ position: 'absolute', zIndex: 100,visibility: isPlay ? 'hidden' : 'initial' }}
+        />
       </div>
     </div>
   );
