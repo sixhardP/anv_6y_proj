@@ -15,7 +15,7 @@ export const Noon = () => {
           <div className="animation_layer parallax" id="mountain"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.75} speed={0.25}>
+        <ParallaxLayer offset={2.8} speed={0.25}>
             <div style={{padding:24}}>
             <h1 id="textblock-title" style={{color:'white',fontFamily:'cursive'}}>Noon</h1>
             <h1 id="textblock-title" style={{color:'white',fontFamily:'cursive'}}>The Present</h1>
@@ -26,7 +26,7 @@ export const Noon = () => {
             url={video}
             width={'300px'}
             height={'450px'}
-            
+            controls={true}
             />
             </div>
             
