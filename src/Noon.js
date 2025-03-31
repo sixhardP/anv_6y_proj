@@ -7,15 +7,15 @@ import video from './video/latest-video.mp4'
 export const Noon = () => {
     return (
         <>
-          <ParallaxLayer offset={2.78} speed={0.25}>
+          <ParallaxLayer offset={2.8} speed={0.25}>
         <div className="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.78} speed={0.25}>
+        <ParallaxLayer offset={2.8} speed={0.25}>
           <div className="animation_layer parallax" id="mountain"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.78} speed={0.25}>
+        <ParallaxLayer offset={2.8} speed={0.25}>
             <div style={{padding:24}}>
             <h1 id="textblock-title" style={{color:'white',fontFamily:'cursive'}}>Noon</h1>
             <h1 id="textblock-title" style={{color:'white',fontFamily:'cursive'}}>The Present</h1>
