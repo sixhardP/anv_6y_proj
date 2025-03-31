@@ -8,7 +8,7 @@ import MultiStageTransition from './MultiStageTransition';
 
 function Night() {
     return (
-         <ParallaxLayer offset={3.42} speed={0.45}>
+         <ParallaxLayer offset={3.39} speed={0.45}>
         <div  style={{
             backgroundImage: "url(" + shootingStar + ")",
         backgroundSize: "cover",
